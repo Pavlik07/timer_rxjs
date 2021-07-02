@@ -65,12 +65,9 @@ function App() {
   };
 
   const reset = () => {
-    if(isRunning === 1) {console.log('yes')}
-    else
     setIsRunning(0);
-    newS=0;
     setTime({h:0, m:0, s:0});
-    start(clearInterval);
+    start();
   }
 
   return (
